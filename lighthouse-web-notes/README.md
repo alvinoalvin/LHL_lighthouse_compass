@@ -7,12 +7,13 @@ This repository contains all of the notes taken by [Alvin](https://github.com/al
 ## Day 1
 
 ### Markdown syntax
-
 [Link Text](URL)
+
 
 ### Week 1
   1. Day 1
-   
-    1. Item One 
-    2. Item Two
-    3. Item Three
+    1. d1
+    2. lotide
+    3. stretch
+  2. Day 2
+    1.  
