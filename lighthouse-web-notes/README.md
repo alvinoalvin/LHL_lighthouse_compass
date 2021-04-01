@@ -21,11 +21,18 @@ This repository contains all of the notes taken by [Alvin](https://github.com/al
 5.  One single task could be to compute and return a value (eg: zeroPad)
 6.  Another single task could be to perform a side effect such as logging a message to the screen (eg: printFarmInventory)
 7.  Data needed by Functions should be passed in as parameters/arguments (i.e. local scope) instead of being accessed directly
+8.  
+## Day 3
 
 ### Week 1
 
-1. Day 1
+1. Day 1 (conditionals and functions)
    * d1
    * lotide
    * stretch
-2. Day 2
+2. Day 2 (arrays)
+   * d2
+   * lotide
+   * stretch
+3. Day 3 (objects)
+   *
