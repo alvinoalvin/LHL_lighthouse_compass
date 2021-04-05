@@ -1,0 +1,15 @@
+{
+  "name": "format_names",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nameInverterTest.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}

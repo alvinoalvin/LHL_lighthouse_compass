@@ -102,12 +102,11 @@ describe("#shouldBuyCar()", function() {
     assert.isFalse(shouldBuy);
   });
 
-  /* should return undefined when there is no car */
-  it("should return undefined when there is no car", function() {
-    // const car = null;
-    // const shouldBuy = shouldBuyCar(car);
-    expect.fail(shouldBuyCar(car), undefined);
+/* should return error when there is no car */
+  it("should return error ", function() {
+    assert.throw(() => { shouldBuyCar(); }, Error);
   });
+  
 });
 
 // If no car gets passed into the function, it should return undefined.
