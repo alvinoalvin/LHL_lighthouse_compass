@@ -29,8 +29,8 @@ const mode = function(arr) {
 
   for (let item in (occurences)) {
     if (max.occurences < occurences[item]) {
-      max["key"] = item;
-      max["occurences"] = occurences[item];
+      max.key = item;
+      max.occurences = occurences[item];
     }
   }
 
