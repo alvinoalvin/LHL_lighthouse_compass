@@ -1,13 +1,13 @@
 const net = require('net');
-const port = 8008;
+const port = 3000;
 
 const client = net.createConnection({
-  host: 'localhost', // change to IP address of computer or ngrok host if tunneling
+  host: '192.168.1.67', // change to IP address of computer or ngrok host if tunneling
   port: port // or change to the ngrok port if tunneling
 });
 
 client.setEncoding('utf8'); //allows for emojis and the sorts
-process.stdin.on('data', message => client.write(message));
+// process.stdin.on('data', message => client.write(message));
 
 // client.js
 client.on('connect', () =>

@@ -1,5 +1,5 @@
 const net = require('net');
-const port = 8008;
+const port = 3000;
 
 const server = net.createServer();
 console.log(`logged in as server`)
