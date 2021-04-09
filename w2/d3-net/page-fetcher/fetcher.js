@@ -12,7 +12,7 @@ request(url, (error, response, body) => {
   // console.log(response)
   fs.writeFile(filePath, body, (err) => {
     if (err) throw err;
-    
-    console.log(`bytes has been downloaded and saved to ${filePath}`);
+
+    console.log(`${body.length} bytes has been downloaded and saved to ${filePath}`);
   });
 })
