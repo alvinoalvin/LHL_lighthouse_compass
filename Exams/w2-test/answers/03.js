@@ -33,6 +33,8 @@ const range = function(count, skipZero, descending) {
   /* IMPLEMENT ME */
   let startAt = 0;
   let newCount = count;
+  // let endAt = startAt += newCount;
+  //can just use end variable
 
   if ((count === 0 && descending) || !Number.isInteger(count)) {
     return [];
