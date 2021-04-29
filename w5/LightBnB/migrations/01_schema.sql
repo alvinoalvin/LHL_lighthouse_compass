@@ -1,9 +1,10 @@
 CREATE DATABASE lightbnb IF NOT EXISTS;
+\c lightbnb
 
-DROP TABLE users IF EXISTS CASCADE;
-DROP TABLE reservations IF EXISTS CASCADE;
-DROP TABLE property_reviews IF EXISTS CASCADE;
-DROP TABLE properties IF EXISTS CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS properties CASCADE;
+DROP TABLE IF EXISTS reservations CASCADE;
+DROP TABLE IF EXISTS property_reviews CASCADE;
 
 CREATE TABLE users(
   id INTEGER PRIMARY KEY,
@@ -35,7 +36,7 @@ CREATE TABLE reservations(
   id INTEGER PRIMARY KEY,
   start_date DATE,
   end_date DATE,
-  proprty_id INTEGER,
+  property_id INTEGER,
   guest_id INTEGER
 );
 
@@ -43,7 +44,7 @@ CREATE TABLE reservations(
 CREATE TABLE property_reviews(
   id INTEGER PRIMARY KEY,
   guest_id INTEGER,
-  proprty_id INTEGER,
+  property_id INTEGER,
   reservation_id INTEGER,
   rating SMALLINT,
   message TEXT
