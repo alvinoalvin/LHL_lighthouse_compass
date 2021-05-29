@@ -1,0 +1,68 @@
+function getName (arr)
+   initialize playerArr 
+   
+   for round of array
+      
+      if round.winner isnt in playerArr
+         push to playerArr
+      
+      if round.loser isnt in playerArr
+         push to playerArr
+   
+   end for
+   
+   sort playerArr using .sort
+   return playerArr
+
+func end
+
+
+[
+  { winner: 'Alice', loser: 'Bob',   loser_points: 3 },
+  { winner: 'Carol', loser: 'Dean',  loser_points: 1 },
+  { winner: 'Elise', loser: 'Bob',   loser_points: 2 },
+  { winner: 'Elise', loser: 'Carol', loser_points: 4 },
+  { winner: 'Alice', loser: 'Carol', loser_points: 2 },
+  { winner: 'Carol', loser: 'Dean',  loser_points: 3 },
+  { winner: 'Dean',  loser: 'Elise', loser_points: 2 },
+]
+
+['Alice','Bob','Carol','Dean','Elise']
+
+{
+  'Alice': ['Bob', 'Carol'],
+  'Bob':   [],
+  'Carol': ['Dean'],
+  'Dean':  ['Elise'],
+  'Elise': ['Bob', 'Carol'],
+}
+
+function getBeaten (arr)
+   create playersObj
+   
+   for name of getName(arr)
+      insert object {name:[]} to playersObj
+   endFor
+   
+   for round of array
+      push loser name to playersObj[winner] 
+   endFor
+   
+   for player in playersObj
+      sort using sort function playersObj[player] //this is an arr
+   endFor
+    
+   return the playersObj
+endFunc
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
